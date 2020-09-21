@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap");
 
+:root {
+    --orange: #ff4400;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,4 +22,111 @@ body {
 
 a {
     text-decoration: none;
+}
+
+/** MAIN MENU **/
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #fff;
+}
+
+.main-header h1 {
+    margin-bottom: 1rem;
+}
+
+.main-header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header nav a {
+    color: #000;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.main-header nav a:hover {
+    color: var(--orange);
+}
+
+.main-header nav a.active {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.home main .banner {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(255, 35, 0, .2) 100%), url('../img/jane.jpg');
+    background-size: cover;
+    height: 45rem;
+    width: 100%;
+    background-position: center;
+}
+
+.home main section {
+    margin: 3rem 0;
+    padding: 0 10%;
+}
+
+.home main section article h2 {
+    margin-bottom: 2rem;
+}
+
+
+.home main section article p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.home main section article p:last-child {
+    margin: 0;
+}
+
+.home main section article.musics-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.home main section article.musics-wrapper .image {
+    width: 50%;
+    background-image: url('../img/ilustra.png');
+    background-size: cover;
+    height: 100%;
+}
+
+.home main section article.musics-wrapper .musics ol li strong {
+    color: orange;
+}
+
+.main-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #ddd;
+    color: #333;
+    font-size: 0.8rem;
+
+}
+
+@media screen and (max-width: 700px) {
+    .home main section article.musics-wrapper {
+        flex-direction: column;
+    }
+
+    .home main section article.musics-wrapper .image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
