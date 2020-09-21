@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+.list-none {
+    list-style: none;
+}
+
 /** MAIN MENU **/
 
 .main-header {
@@ -111,7 +115,8 @@ a {
     color: orange;
 }
 
-.about main {
+.about main,
+.music main {
     padding-top: 7rem;
     padding-left: 10%;
     padding-right: 10%;
@@ -151,7 +156,34 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
+}
 
+.music main h2 {
+    margin-bottom: 2rem;
+}
+
+.music main section .videos-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.music main section .videos-wrapper article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.music main section .videos-wrapper iframe {
+    width: 100%;
+}
+
+.music main section .videos-wrapper ul li {
+    margin-bottom: 1rem;
+    font-weight: 300;
 }
 
 .main-footer {
@@ -183,6 +215,19 @@ a {
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0 auto;
+    }
 
+    .music main section .videos-wrapper {
+        flex-direction: column;
+    }
+
+    .music main section .videos-wrapper article {
+        width: 100%;
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 1rem;
+    }
+
+    .music main section .videos-wrapper article:last-child {
+        border: 0;
     }
 }
