@@ -28,6 +28,7 @@ a {
 
 .main-header {
     position: fixed;
+    top: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,10 +36,12 @@ a {
     justify-content: center;
     padding: 1rem 0;
     background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
 }
 
 .main-header h1 {
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .main-header nav {
@@ -108,6 +111,49 @@ a {
     color: orange;
 }
 
+.about main {
+    padding-top: 7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 3rem 0;
+}
+
+.about main h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about main section blockquote {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 0 5%;
+}
+
+.about main section blockquote q {
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: justify;
+    margin-bottom: .5rem;
+}
+
+.about main section blockquote cite {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.about main section .image {
+    width: 30rem;
+    height: 20rem;
+    background-image: url('../img/jane2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+}
+
 .main-footer {
     width: 100%;
     display: flex;
@@ -128,5 +174,15 @@ a {
     .home main section article.musics-wrapper .image {
         width: 100%;
         margin-bottom: 1rem;
+    }
+
+    .about main section .image {
+        width: 100%;
+        height: 15rem;
+        background-image: url('../img/jane2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+
     }
 }
