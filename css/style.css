@@ -308,6 +308,18 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+    .main-header a {
+        display: flex;
+    }
+
+    .main-header a .fas {
+        margin-right: 0.25rem;
+    }
+
+    .main-header nav {
+        width: 90%
+    }
+
     .home main section article.musics-wrapper {
         flex-direction: column;
     }
