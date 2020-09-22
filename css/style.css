@@ -51,6 +51,18 @@ a {
     opacity: 1;
 }
 
+.fa-facebook {
+    color: #4267B2;
+}
+
+.fa-instagram {
+    color: #5851DB;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
 /** MAIN MENU **/
 
 .main-header {
@@ -239,6 +251,10 @@ a {
     margin-bottom: 1rem;
 }
 
+.contact main section .form-wrapper form .box-input label {
+    margin-bottom: 0.5rem;
+}
+
 .contact main section .form-wrapper form .inline-input {
     display: flex;
     align-items: center;
@@ -289,7 +305,6 @@ a {
     background-color: #ddd;
     color: #333;
     font-size: 0.8rem;
-
 }
 
 @media screen and (max-width: 700px) {
@@ -337,5 +352,11 @@ a {
     .contact main section .form-wrapper form,
     .contact main section .form-wrapper .maps {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about main section blockquote q {
+        text-align: center;
     }
 }
